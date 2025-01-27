@@ -17,6 +17,11 @@
   --nav-font: "Poppins",  sans-serif;
 }
 
+@font-face {
+  font-family: "Bingo Bangos";
+  src: url('../fonts/Bingo Bangos.ttf') format('truetype');
+}
+
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
@@ -2781,12 +2786,22 @@ section,
   margin-top: 40px; /* Deja espacio para que la barra no se superponga */
 }
 
-/* Opcional: para mejorar la visibilidad en dispositivos pequeños */
+/* Para mejorar la visibilidad en dispositivos pequeños */
 @media (max-width: 768px) {
   .top-bar {
     font-size: 12px;
     padding: 8px 0;
   }
+}
+
+.sitename {
+  font-family: 'Bingo Bangos', sans-serif;
+  font-size: 48px;
+  letter-spacing: 5px; /* Ajusta el espacio entre letras */
+}
+
+.highlight {
+  color: blue; /* Cambia el color de "Maintenance" a azul */
 }
 
 /*--------------------------------------------------------------
