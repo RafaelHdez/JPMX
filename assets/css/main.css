@@ -2797,7 +2797,7 @@ section,
 .sitename {
   font-family: 'Bingo Bangos', sans-serif;
   font-size: 48px;
-  letter-spacing: 5px; /* Ajusta el espacio entre letras */
+  letter-spacing: 6px; /* Ajusta el espacio entre letras */
 }
 
 .highlight {

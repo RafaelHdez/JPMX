@@ -119,7 +119,7 @@
         <div class="work-form">
             
 
-            <form>
+            <form action="contact.php" method="post">
 
                 <div class="container section-title2 mb-4" data-aos="fade-up">
                     <p>Work Authorization Form</p>
@@ -129,42 +129,42 @@
                     <div class="row gy-4 ">
 
                         <div class="col-md-6">
-                            <input type="text" name="Registration No." class="form-control"
-                                placeholder="Registration No. (Required)" required="">
+                            <input type="text" name="registration_no" class="form-control"
+                                placeholder="Registration No. (Required)" required>
                         </div>
 
                         <div class="col-md-6 ">
-                            <input type="email" class="form-control" name="Aircraft Serial No."
-                                placeholder="Aircraft Serial No. (Required)" required="">
+                            <input type="text" class="form-control" name="aircraft_serial_no"
+                                placeholder="Aircraft Serial No. (Required)" required>
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="Name of Contact"
-                                placeholder="Name of Contact (Required)" required="">
+                            <input type="text" class="form-control" name="contact_name"
+                                placeholder="Name of Contact (Required)" required>
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="Relation to Aircraft"
-                                placeholder="Relation to Aircraft (Required)" required="">
+                            <input type="text" class="form-control" name="relation_to_aircraft"
+                                placeholder="Relation to Aircraft (Required)" required>
                         </div>
 
                         <div class="col-md-12">
-                            <input type="text" class="form-control" name="Company Name" placeholder="Company Name"
+                            <input type="text" class="form-control" name="company_name" placeholder="Company Name"
                                 required="">
                         </div>
 
                         <div class="col-md-12">
-                            <input type="text" class="form-control" name="Billing Address"
+                            <input type="text" class="form-control" name="billing_address"
                                 placeholder="Billing Address (Required)" required="">
                         </div>
 
                         <div class="col-md-12">
-                            <input type="text" class="form-control" name="Street Address" placeholder="Street Address"
+                            <input type="text" class="form-control" name="street_address" placeholder="Street Address"
                                 required="">
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="Address Line 2" placeholder="Address Line 2"
+                            <input type="text" class="form-control" name="address_line2" placeholder="Address Line 2"
                                 required="">
                         </div>
 
@@ -174,12 +174,12 @@
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="postal code" placeholder="ZIP / Postal Code"
+                            <input type="text" class="form-control" name="zip_code" placeholder="ZIP / Postal Code"
                                 required="">
                         </div>
 
                         <select class="form-select-lg border-1 col-md-6 border-light-subtle input3"
-                            style="width: 48%;  margin-left: 10px; height: 90%;" aria-label=" Default select example">
+                            style="width: 48%;  margin-left: 10px; height: 90%;" aria-label=" Default select example" name="country">
                             <option selected>Country</option>
                             <option value="1">Afghanistan</option>
                             <option value="2">Albania</option>
@@ -343,20 +343,20 @@
                         </select>
 
                         <div class="col-md-12">
-                            <input type="text" class="form-control" name="Shipping Address"
+                            <input type="text" class="form-control" name="shipping_address"
                                 placeholder="Shipping Address" required="">
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="Phone" placeholder="Phone" required="">
+                            <input type="text" class="form-control" name="phone" placeholder="Phone" required="">
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="Fax" placeholder="Fax (Required)" required="">
+                            <input type="text" class="form-control" name="fax" placeholder="Fax (Required)" required="">
                         </div>
 
                         <div class="col-md-12">
-                            <input type="text" class="form-control" name="Email" placeholder="Email (Required)"
+                            <input type="text" class="form-control" name="email" placeholder="Email (Required)"
                                 required="">
                         </div>
 
@@ -364,138 +364,138 @@
                         </div>
 
                         <div class="col-md-12">
-                            <input type="text" class="form-control" name="Aircraft"
-                                placeholder="Aircraft Type(Required)" required="">
+                            <input type="text" class="form-control" name="aircraft_type"
+                                placeholder="Aircraft Type(Required)" required>
                         </div>
 
                         <p class="flight">Flight Operation</p>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="flight_operation" id="flexRadioDefault1" value="FAR91">
                             <label class="form-check-label" for="flexRadioDefault1">FAR 91</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <input class="form-check-input" type="radio" name="flight_operation" id="flexRadioDefault2" value="FAR135">
                             <label class="form-check-label" for="flexRadioDefault2">FAR 135</label>
                         </div>
 
                         <p class="flight">Type of Maintenance</p>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="maintenance_type" id="flexRadioDefault1" value="AOG">
                             <label class="form-check-label" for="flexRadioDefault1">AOG</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <input class="form-check-input" type="radio" name="maintenance_type" id="flexRadioDefault2" value="Scheduled">
                             <label class="form-check-label" for="flexRadioDefault2">Scheduled</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <input class="form-check-input" type="radio" name="maintenance_type" id="flexRadioDefault2" value="Uncheduled">
                             <label class="form-check-label" for="flexRadioDefault2">Unscheduled</label>
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="Engine Model No."
+                            <input type="text" class="form-control" name="engine_model_no"
                                 placeholder="Engine Model No." required="">
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="Aircraft Total Time"
+                            <input type="text" class="form-control" name="aircraft_total_time"
                                 placeholder="Aircraft Total Time" required="">
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="Aircraft Total Landings"
+                            <input type="text" class="form-control" name="aircraft_total_landings"
                                 placeholder="Aircraft Total Landings" required="">
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="Engine #1 S/N" placeholder="Engine #1 S/N"
+                            <input type="text" class="form-control" name="engine_1_sn" placeholder="Engine #1 S/N"
                                 required="">
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="Engine #2 S/N" placeholder="Engine #2 S/N"
+                            <input type="text" class="form-control" name="engine_2_sn" placeholder="Engine #2 S/N"
                                 required="">
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="Engine #3 S/N" placeholder="Engine #3 S/N"
+                            <input type="text" class="form-control" name="engine_3_sn" placeholder="Engine #3 S/N"
                                 required="">
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="Engine #1 Cycles"
+                            <input type="text" class="form-control" name="engine_1_cycles"
                                 placeholder="Engine #1 Cycles" required="">
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="Engine #2 Cycles"
+                            <input type="text" class="form-control" name="engine_2_cycles"
                                 placeholder="Engine #2 Cycles" required="">
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="Engine #3 Cycles"
+                            <input type="text" class="form-control" name="engine_3_cycles"
                                 placeholder="Engine #3 Cycles" required="">
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="APU Model No." placeholder="City" required="">
+                            <input type="text" class="form-control" name="city" placeholder="City" required="">
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="APU S/N." placeholder="APU S/N." required="">
+                            <input type="text" class="form-control" name="apu_sn" placeholder="APU S/N." required="">
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="APU Model No" placeholder="APU Model No"
+                            <input type="text" class="form-control" name="apu_model_no" placeholder="APU Model No"
                                 required="">
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="APU Model TT" placeholder="APU Model TT"
+                            <input type="text" class="form-control" name="apu_model_tt" placeholder="APU Model TT"
                                 required="">
                         </div>
 
                         <p class="flight">Plane locked? (required)</p>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <input class="form-check-input" type="radio" name="plane_locked" value="No" id="flexRadioDefault2">
                             <label class="form-check-label" for="flexRadioDefault2">No</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <input class="form-check-input" type="radio" name="plane_locked" value="Yes" id="flexRadioDefault2">
                             <label class="form-check-label" for="flexRadioDefault2">Yes</label>
                         </div>
 
                         <div class="col-md-12">
-                            <input type="text" class="form-control" name="Service"
-                                placeholder="Service Required(Required)" required="">
+                            <input type="text" class="form-control" name="service-required"
+                                placeholder="Service Required(Required)" required>
                         </div>
 
                         <div class="col-md-12">
-                            <textarea class="form-control" name="SpecialRequest" rows="6" placeholder="Special Requests (Cleaning, Departure Support, etc.)
+                            <textarea class="form-control" name="special_requests" rows="6" placeholder="Special Requests (Cleaning, Departure Support, etc.)
                             " required=""></textarea>
                         </div>
 
                         <p class="flight">Overtime authorized</p>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <input class="form-check-input" type="radio" name="overtime_authorized" value="Yes" id="flexRadioDefault2">
                             <label class="form-check-label" for="flexRadioDefault2">Yes</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <input class="form-check-input" type="radio" name="overtime_authorized" value="No" id="flexRadioDefault2">
                             <label class="form-check-label" for="flexRadioDefault2">No</label>
                         </div>
 
                         <div class="col-md-12">
-                            <input type="text" class="form-control" name="location" placeholder="Location of Services (include *FBO)(Required)
+                            <input type="text" class="form-control" name="location_of_services" placeholder="Location of Services (include *FBO)(Required)
                             " required="">
                         </div>
 
@@ -509,17 +509,17 @@
                         </div>
 
                         <div class="col-md-6 ">
-                            <input type="date" class="form-control" name="Aircraft Serial No."
-                                placeholder="Aircraft Serial No. (Required)" required="">
+                            <input type="date" class="form-control" name="requested_arrival_date"
+                                placeholder="Aircraft Serial No. (Required)" required>
                         </div>
 
                         <div class="col-md-6 ">
-                            <input type="date" class="form-control" name="Aircraft Serial No."
-                                placeholder="Aircraft Serial No. (Required)" required="">
+                            <input type="date" class="form-control" name="requested_departure_date"
+                                placeholder="Aircraft Serial No. (Required)" required>
                         </div>
 
                         <div class="col-md-12">
-                            <input type="text" class="form-control" name="P.O." placeholder="P.O. #" required="">
+                            <input type="text" class="form-control" name="po_number" placeholder="P.O. #" required="">
                         </div>
 
                         <div class="col-md-6 mt-4">
@@ -530,98 +530,91 @@
 
                         </div>
                         <div class="form-check col-md-6 mt-2">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <input class="form-check-input" type="checkbox" name="warranty_programs[]" value="New Aircraft Warranty" id="flexCheckChecked">
                             <label class="form-check-label" for="flexCheckChecked">
                                 New Aircraft Warranty </label>
                         </div>
 
                         <div class="form-check col-md-6 mt-2">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <input class="form-check-input" type="checkbox" name="warranty_programs[]" value="ESP" id="flexCheckChecked">
                             <label class="form-check-label" for="flexCheckChecked">
                                 ESP
                             </label>
                         </div>
 
                         <div class="form-check col-md-6 mt-5">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <input class="form-check-input" type="checkbox" name="warranty_programs[]" value="ESP Gold" id="flexCheckChecked">
                             <label class="form-check-label" for="flexCheckChecked">
                                 ESP Gold
                             </label>
                         </div>
 
                         <div class="form-check col-md-6 mt-5">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <input class="form-check-input" type="checkbox" name="warranty_programs[]" value="MSP" id="flexCheckChecked">
                             <label class="form-check-label" for="flexCheckChecked">
                                 MSP
                             </label>
                         </div>
 
                         <div class="form-check col-md-6 mt-5">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <input class="form-check-input" type="checkbox" name="warranty_programs[]" value="MSP Gold" id="flexCheckChecked">
                             <label class="form-check-label" for="flexCheckChecked">
                                 MSP Gold
                             </label>
                         </div>
 
                         <div class="form-check col-md-6 mt-5">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <input class="form-check-input" type="checkbox" name="warranty_programs[]" value="CASP" id="flexCheckChecked">
                             <label class="form-check-label" for="flexCheckChecked">
                                 CASP
                             </label>
                         </div>
 
                         <div class="form-check col-md-6 mt-5">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <input class="form-check-input" type="checkbox" name="warranty_programs[]" value="HAPP" id="flexCheckChecked">
                             <label class="form-check-label" for="flexCheckChecked">
                                 HAPP
                             </label>
                         </div>
 
                         <div class="form-check col-md-6 mt-5">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <input class="form-check-input" type="checkbox" name="warranty_programs[]" value="GE On Point" id="flexCheckChecked">
                             <label class="form-check-label" for="flexCheckChecked">
                                 GE On Point
                             </label>
                         </div>
 
                         <div class="form-check col-md-6 mt-5">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <input class="form-check-input" type="checkbox" name="warranty_programs[]" value="Smart Parts" id="flexCheckChecked">
                             <label class="form-check-label" for="flexCheckChecked">
                                 Smart Parts
                             </label>
                         </div>
 
                         <div class="form-check col-md-6 mt-5">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <input class="form-check-input" type="checkbox" name="warranty_programs[]" value="JSSI Engines" id="flexCheckChecked">
                             <label class="form-check-label" for="flexCheckChecked">
                                 JSSI Engines
                             </label>
                         </div>
 
                         <div class="form-check col-md-6 mt-5">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <input class="form-check-input" type="checkbox" name="warranty_programs[]" value="JSSI Tip to Tail" id="flexCheckChecked">
                             <label class="form-check-label" for="flexCheckChecked">
                                 JSSI Tip to Tail
                             </label>
                         </div>
 
                         <div class="form-check col-md-6 mt-5">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <input class="form-check-input" type="checkbox" name="warranty_programs[]" value="Other" id="flexCheckChecked">
                             <label class="form-check-label" for="flexCheckChecked">
                                 Other
                             </label>
                         </div>
 
                         <div class="col-md-12">
-                            <textarea class="form-control" name="Warranty" rows="6" placeholder="Enter Warranty Information
+                            <textarea class="form-control" name="warranty_information" rows="6" placeholder="Enter Warranty Information
                             " required=""></textarea>
-                        </div>
-
-                        <div class="prueba">
-                        </div>
-
-                        <div>
-                            <img src="assets/img/tarjetas.png" style="width:15%; margin-left: 20px;" alt="">
                         </div>
 
                         <div class="col-md-6 mt-4">
@@ -629,7 +622,7 @@
                         </div>
 
                         <div class="col-md-12">
-                            <input type="text" class="form-control" name="Card Number" placeholder="Card Number"
+                            <input type="text" class="form-control" name="credit_card_number" placeholder="Card Number"
                                 required="">
                         </div>
 
@@ -639,7 +632,7 @@
 
                         <div>
                             <select class="form-select-sm border-1 col-md-3 border-light-subtle"
-                                aria-label="Default select example" style="width: 24%; height: 90%;">
+                                aria-label="Default select example" style="width: 24%; height: 90%;" name="credit_card_month">
                                 <option selected>Month</option>
                                 <option value="01">January</option>
                                 <option value="02">February</option>
@@ -656,7 +649,7 @@
                             </select>
 
                             <select class="form-select-sm border-1 col-md-3 border-light-subtle"
-                                aria-label="Default select example" style="width: 24%; margin-left: 15px; height: 90%;">
+                                aria-label="Default select example" style="width: 24%; margin-left: 15px; height: 90%;" name="credit_card_year">
                                 <option selected>Year</option>
                                 <option value="2024">2024</option>
                                 <option value="2025">2025</option>
@@ -681,37 +674,21 @@
                             </select>
 
                             <div class="col-md-3 input2">
-                                <input type="text" maxlength="4" class="form-control" name="security code"
+                                <input type="text" maxlength="4" class="form-control" name="credit_card_security_code"
                                     placeholder="Security code" required="">
                             </div>
-
-                            <img src="assets/img/tarjeta-de-credito.png" style="margin-left: 10px;" alt="">
 
                         </div>
 
                         <div>
                             <div class="col-md-12">
-                                <input type="text" class="form-control" name="Cardholdname" placeholder="Cardholder Name
+                                <input type="text" class="form-control" name="cardholder_name" placeholder="Cardholder Name
                                 " required="">
                             </div>
 
                             <div class="col-md-12 mt-4">
-                                <input type="text" class="form-control" name="Serviceauthorize"
-                                    placeholder="Service Authorized by(Required)" required="">
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault2">
-                                <label class="form-check-label" for="flexRadioDefault2">Yes</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault2">
-                                <label class="form-check-label" for="flexRadioDefault2">No</label>
+                                <input type="text" class="form-control" name="service_authorized_by"
+                                    placeholder="Service Authorized by(Required)" required>
                             </div>
                         </div>
 
@@ -720,15 +697,15 @@
                             <p class="flight">Date</p>
 
                             <div class="col-md-6 mt-4">
-                                <input type="date" class="form-control" name="Serviceauthorize"
+                                <input type="date" class="form-control" name="service_authorized_date"
                                     placeholder="Service Authorized by(Required)" required="">
                             </div>
                         </div>
 
                         <div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="flexRadioDefault"
-                                    id="flexRadioDefault1">
+                                <input class="form-check-input" type="checkbox" name="agree_terms"
+                                    id="flexRadioDefault1" required>
                                 <label class="form-check-label" for="flexRadioDefaul t1"> I agree to the Terms &
                                     Conditions. (Required)</label>
                             </div>
@@ -942,12 +919,6 @@
               <a href="index.html" class="logo d-flex align-items-center">
                 <span class="sitename">Just Plane Maintenance</span>
               </a>
-              <div class="social-links d-flex mt-4">
-                <a href=""><i class="bi bi-twitter-x"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
               <!-- Aquí se agrega el logo debajo de las redes sociales -->
               <div class="footer-logo mt-4">
                 <img src="assets/img/jmpx-logo.png" alt="Company Logo" class="img-fluid">
@@ -991,14 +962,7 @@
         </div>
     
         <div class="container copyright text-center mt-4">
-          <p>© <span>Copyright</span> <strong>Append</strong> <span>All Rights Reserved</span></p>
-          <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you've purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
+          <p>© <span>Copyright</span> <strong>Just Plane Maintenance</strong> <span>All Rights Reserved</span></p>
         </div>
     
       </footer>
