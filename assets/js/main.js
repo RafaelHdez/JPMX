@@ -216,10 +216,10 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
   const videos = [
-    'assets/videos/video1.mp4',
-    'assets/videos/video2.mp4',
-    'assets/videos/video3.mp4',
-    'assets/videos/video4.mp4'
+    'assets/videos/aircraft-video1.mp4',
+    'assets/videos/aircraft-video2.mp4',
+    'assets/videos/aircraft-video3.mp4',
+    'assets/videos/aircraft-video4.mp4'
   ];
   
   const randomVideo = videos[Math.floor(Math.random() * videos.length)];
